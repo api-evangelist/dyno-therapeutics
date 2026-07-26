@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/dynotx/phi-cli
+name: phi
+package: dyno-phi
+description: >-
+  Command-line client for the Dyno Phi protein design platform. Provides an agentic
+  workflow for uploading structures, predicting folds, generating sequences via inverse
+  folding, and scoring candidates against quality thresholds. Authenticates with a Phi
+  platform API key (`phi login`).
+install:
+  - method: pip
+    command: pip install dyno-phi
+authentication:
+  style: api-key
+  notes: '`phi login` verifies the API key and prints identity.'
+commands:
+  - name: tutorial
+    summary: Download example structures and print a step-by-step walkthrough.
+  - name: login
+    summary: Verify API key and print identity.
+  - name: upload
+    summary: Upload PDB/CIF files or a directory.
+  - name: fetch
+    summary: Download a structure from RCSB PDB or AlphaFold DB, crop, optionally upload.
+  - name: datasets
+    summary: List datasets.
+  - name: filter
+    summary: 'Full filter pipeline: inverse folding to folding to complex folding to score.'
+  - name: scores
+    summary: Display the scores table for a completed filter job.
+  - name: download
+    summary: Download job artifacts (structures, scores, raw JSONs).
+  - name: status
+    summary: Poll job status.
+  - name: jobs
+    summary: List recent jobs.
+  - name: cancel
+    summary: Cancel a running job.

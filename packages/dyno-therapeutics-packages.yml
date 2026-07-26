@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/ + https://github.com/dynotx
+packages:
+  - language: python
+    registry: pypi
+    name: dyno-phi
+    version: 0.2.3
+    url: https://pypi.org/project/dyno-phi/
+    install: pip install dyno-phi
+    repository: https://github.com/dynotx/phi-cli
+    summary: Phi CLI and biomodals for the Dyno protein design platform (client for the Phi API; ships the `phi` command).
+    official: true
+  - language: python
+    registry: pypi
+    name: dynopsi
+    version: 1.0.0
+    url: https://pypi.org/project/dynopsi/
+    install: pip install dynopsi
+    repository: https://github.com/dynotx/dynopsi
+    summary: Inference and sampling for Dyno Psi-1, a de novo protein binder design model.
+    official: true
+  - language: python
+    registry: pypi
+    name: liminal-orm
+    version: 4.6.1
+    url: https://pypi.org/project/liminal-orm/
+    install: pip install liminal-orm
+    repository: https://github.com/dynotx/liminal-orm
+    docs: https://dynotx.github.io/liminal-orm/
+    summary: ORM and toolkit on top of Benchling to keep schemas and downstream code dependencies in sync.
+    official: true
